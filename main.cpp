@@ -24,7 +24,7 @@ public:
 bool isLeap1(int year)
 {
 	if (year < 0 || cin.fail())
-		cerr << "Ïğîèçîøëî èñêëş÷åíèå â ôóíêöèè isLeap1" << endl;
+		cerr << "ĞŸÑ€Ğ¾Ğ¸Ğ·Ğ¾ÑˆĞ»Ğ¾ Ğ¸ÑĞºĞ»ÑÑ‡ĞµĞ½Ğ¸Ğµ Ğ² Ñ„ÑƒĞ½ĞºÑ†Ğ¸Ğ¸ isLeap1" << endl;
 	return year % 400 == 0 || year % 100 != 0 && year % 4 == 0;
 }
 
@@ -38,7 +38,7 @@ bool isLeap2(int year) throw(int)
 bool isLeap3(int year) throw(invalid_argument)
 {
 	if (year < 0)
-		throw invalid_argument("Ãîä íå ìîæåò áûòü îòğèöàòåëüíûì!");
+		throw invalid_argument("Ğ“Ğ¾Ğ´ Ğ½Ğµ Ğ¼Ğ¾Ğ¶ĞµÑ‚ Ğ±Ñ‹Ñ‚ÑŒ Ğ¾Ñ‚Ñ€Ğ¸Ñ†Ğ°Ñ‚ĞµĞ»ÑŒĞ½Ñ‹Ğ¼!");
 	return year % 400 == 0 || year % 100 != 0 && year % 4 == 0;;
 }
 
@@ -52,23 +52,23 @@ bool isLeap4_1(int year) throw(MyExcept1)
 bool isLeap4_2(int year) throw(MyExcept2)
 {
 	if (year < 0)
-		throw MyExcept2("Ãîä íå ìîæåò áûòü îòğèöàòåëüíûì!");
+		throw MyExcept2("Ğ“Ğ¾Ğ´ Ğ½Ğµ Ğ¼Ğ¾Ğ¶ĞµÑ‚ Ğ±Ñ‹Ñ‚ÑŒ Ğ¾Ñ‚Ñ€Ğ¸Ñ†Ğ°Ñ‚ĞµĞ»ÑŒĞ½Ñ‹Ğ¼!");
 	return year % 400 == 0 || year % 100 != 0 && year % 4 == 0;
 }
 
 bool isLeap4_3(int year) throw(MyExcept3)
 {
 	if (year < 0)
-		throw MyExcept3("Íåâåğíûé àğãóìåíò ", year);
+		throw MyExcept3("ĞĞµĞ²ĞµÑ€Ğ½Ñ‹Ğ¹ Ğ°Ñ€Ğ³ÑƒĞ¼ĞµĞ½Ñ‚ ", year);
 	return year % 400 == 0 || year % 100 != 0 && year % 4 == 0;
 }
 
 void launcher(bool (*func)(int))
 {
 	int year;
-	cout << "Ââåäèòå ãîä: ";
+	cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ³Ğ¾Ğ´: ";
 	cin >> year;
-	cout << "Ãîä " << year << (func(year) ? " " : " íå ") << "âèñîêîñíûé!" << endl;
+	cout << "Ğ“Ğ¾Ğ´ " << year << (func(year) ? " " : " Ğ½Ğµ ") << "Ğ²Ğ¸ÑĞ¾ĞºĞ¾ÑĞ½Ñ‹Ğ¹!" << endl;
 }
 
 int main()
@@ -82,7 +82,7 @@ int main()
 
 	catch (...)
 	{
-		cout << "Ïğîèçîøëî èñêëş÷åíèå â ôóíêöèè isLeap1" << endl;
+		cout << "ĞŸÑ€Ğ¾Ğ¸Ğ·Ğ¾ÑˆĞ»Ğ¾ Ğ¸ÑĞºĞ»ÑÑ‡ĞµĞ½Ğ¸Ğµ Ğ² Ñ„ÑƒĞ½ĞºÑ†Ğ¸Ğ¸ isLeap1" << endl;
 	}
 
 	try
@@ -92,7 +92,7 @@ int main()
 
 	catch (int)
 	{
-		cout << "Ïğîèçîøëî èñêëş÷åíèå â ôóíêöèè isLeap2" << endl;
+		cout << "ĞŸÑ€Ğ¾Ğ¸Ğ·Ğ¾ÑˆĞ»Ğ¾ Ğ¸ÑĞºĞ»ÑÑ‡ĞµĞ½Ğ¸Ğµ Ğ² Ñ„ÑƒĞ½ĞºÑ†Ğ¸Ğ¸ isLeap2" << endl;
 	}
 
 	try
@@ -112,7 +112,7 @@ int main()
 
 	catch (MyExcept1)
 	{
-		cout << "Ïğîèçîøëî èñêëş÷åíèå MyExcept1 â ôóíêöèè isLeap4_1" << endl;
+		cout << "ĞŸÑ€Ğ¾Ğ¸Ğ·Ğ¾ÑˆĞ»Ğ¾ Ğ¸ÑĞºĞ»ÑÑ‡ĞµĞ½Ğ¸Ğµ MyExcept1 Ğ² Ñ„ÑƒĞ½ĞºÑ†Ğ¸Ğ¸ isLeap4_1" << endl;
 	}
 
 	try
